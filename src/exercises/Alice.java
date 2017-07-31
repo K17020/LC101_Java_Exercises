@@ -9,6 +9,6 @@ public class Alice {
         System.out.println("What word would you like to search?");
         String search_term = user_input.nextLine();
 
-        System.out.print(search_term.toLowerCase().contains(story.toLowerCase()));
+        System.out.print(story.toLowerCase().contains(search_term.toLowerCase()));
     }
 }
