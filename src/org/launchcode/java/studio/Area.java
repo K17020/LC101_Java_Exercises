@@ -23,7 +23,7 @@ public class Area {
                 // Does the math for the Area of the circle
                 Double area = Math.PI * radius * radius;
                 // print the area of a Circle;
-                System.out.print(area);
+                System.out.print("The area of a circle of radius " + user_input + "is: " + area);
             }
         }
     }
