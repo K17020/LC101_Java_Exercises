@@ -1,6 +1,5 @@
 package org.launchcode.java.studio;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,13 +19,12 @@ public class CountingCharacters {
         for (char letter:letters){
             // If the HashMap doesn't contain the key then add the letter HashMap
             if (!amountKeeper.containsKey(letter)){
-                amountKeeper.put(letter,0);
+                amountKeeper.put(letter,1);
             }
             // Otherwise if the key already exists update the value of the key
-            else;{
+            else{
                 amountKeeper.put(letter,amountKeeper.get(letter)+1);
             }
-
         }
         // Print the keys and its its values
         for (Map.Entry<Character,Integer> storedValues:amountKeeper.entrySet()) {
