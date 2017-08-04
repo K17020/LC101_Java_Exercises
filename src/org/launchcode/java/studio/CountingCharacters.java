@@ -12,11 +12,8 @@ public class CountingCharacters {
         // Variable to hold the string to be read
         String readMe = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan sem ut ligula scelerisque sollicitudin. Ut at sagittis augue. Praesent quis rhoncus justo. Aliquam erat volutpat. Donec sit amet suscipit metus, non lobortis massa. Vestibulum augue ex, dapibus ac suscipit vel, volutpat eget massa. Donec nec velit non ligula efficitur luctus.";
 
-        // puts each character into an array
-        char[] letters = readMe.toCharArray();
-
         // Loop though each character
-        for (char letter:letters){
+        for (char letter:readMe.toCharArray()){
             // If the HashMap doesn't contain the key then add the letter HashMap
             if (!amountKeeper.containsKey(letter)){
                 amountKeeper.put(letter,1);
